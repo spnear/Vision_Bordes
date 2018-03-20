@@ -13,6 +13,7 @@ function [ ] = Sobel(Imagen,numerofig)
     imshow(BordesSobel1),title('Sobel 1')
     subplot(1,2,2)
     imshow(BordesSobel2),title('Sobel 2')
+    set(gcf,'units','normalized','outerposition',[0 0 1 1])
     
     Imagen = uint8(Imagen);
     figure(numerofig+1)
@@ -20,6 +21,7 @@ function [ ] = Sobel(Imagen,numerofig)
     imshow(Imagen),title('Original')
     subplot(1,2,2)
     imshow(Sobel),title('Sobel')
+    set(gcf,'units','normalized','outerposition',[0 0 1 1])
 
 end
 

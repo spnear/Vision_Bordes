@@ -19,12 +19,14 @@ function [ ] = Roberts(Imagen,numerofig)
     imshow(uint8(BordesVertical)),title('Roberts BordesVertical')
     subplot(1,2,2)
     imshow(uint8(BordesHorizontal)),title('Roberts BordesHorizontal')
+    set(gcf,'units','normalized','outerposition',[0 0 1 1])
     
     figure(numerofig+1)
     subplot(1,2,1)
     imshow(uint8(BordesDiag1)),title('Roberts BordesDiag1')
     subplot(1,2,2)
     imshow(uint8(BordesDiag2)),title('Roberts BordesDiag2')
+    set(gcf,'units','normalized','outerposition',[0 0 1 1])
     
     figure(numerofig+2)
     Imagen = uint8(Imagen);
@@ -32,6 +34,7 @@ function [ ] = Roberts(Imagen,numerofig)
     imshow(Imagen),title('Original')
     subplot(1,2,2)
     imshow(Roberts),title('Roberts')
+    set(gcf,'units','normalized','outerposition',[0 0 1 1])
     
 end
 

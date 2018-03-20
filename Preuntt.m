@@ -19,11 +19,13 @@ function [ ] = Preuntt(Imagen,numerofig)
     imshow(uint8(BordesPreuntt1)),title('Preuntt1')
     subplot(1,2,2)
     imshow(uint8(BordesPreuntt2)),title('Preuntt2')
+    set(gcf,'units','normalized','outerposition',[0 0 1 1])
     figure(numerofig+1)
     subplot(1,2,1)
     imshow(uint8(BordesPreunt3)),title('Preuntt3')
     subplot(1,2,2)
     imshow(uint8(BordesPreuntt4)),title('Preuntt4')
+    set(gcf,'units','normalized','outerposition',[0 0 1 1])
     
     figure(numerofig+2)
     Imagen = uint8(Imagen);
@@ -31,5 +33,6 @@ function [ ] = Preuntt(Imagen,numerofig)
     imshow(Imagen),title('Original')
     subplot(1,2,2)
     imshow(Preuntt),title('Preuntt')
+    set(gcf,'units','normalized','outerposition',[0 0 1 1])
     
 end
